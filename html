@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Farmacia Salud Total</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bienvenido a la Farmacia </h1>
+            <p>Encuentra todo lo que necesitas para tu salud.</p>
+            <img src="20210319083507.farmacia.webp" alt="Farmacia">
+        </section>
+
+        <!-- Calculadora de Dosis -->
+        <section id="calculadora">
+            <h2>Calculadora de Dosis</h2>
+            <p>Introduce tu peso (kg) para calcular la dosis:</p>
+            <input type="number" id="peso" placeholder="Peso en kg">
+            <button onclick="calcularDosis()">Calcular Dosis</button>
+            <p id="resultado-dosis"></p>
+        </section>
+
+        <!-- Añadir Comentarios -->
+        <section id="comentarios">
+            <h2>Añadir Comentarios</h2>
+            <textarea id="comentario" placeholder="Escribe tu comentario"></textarea>
+            <button onclick="agregarComentario()">Añadir Comentario</button>
+            <ul id="lista-comentarios"></ul>
+        </section>
+
+        <!-- Calificar Producto -->
+        <section id="calificar">
+            <h2>Calificar Producto</h2>
+            <label for="calificacion">Calificación:</label>
+            <select id="calificacion">
+                <option value="1">1 estrella</option>
+                <option value="2">2 estrellas</option>
+                <option value="3">3 estrellas</option>
+                <option value="4">4 estrellas</option>
+                <option value="5">5 estrellas</option>
+            </select>
+            <button onclick="calificarProducto()">Enviar Calificación</button>
+            <p id="resultado-calificacion"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farmacia Salud Total. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
